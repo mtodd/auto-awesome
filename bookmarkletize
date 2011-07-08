@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+source=${1:-"source.js"}
+output=${2:-"bookmarklet.js"}
+
+cat $source | ./javascript_bookmarklet_builder > $output
