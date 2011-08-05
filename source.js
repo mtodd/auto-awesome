@@ -6,4 +6,5 @@ var awesome = function(domId) {
 };
 awesome.domId = $('a[style*=left\\:\\ 370px]')[0].id;
 setInterval('awesome("'+awesome.domId+'")', 45000);
+awesome(awesome.domId);
 window.alert("I don't always awesome, but when I do, I do it automatically.")
