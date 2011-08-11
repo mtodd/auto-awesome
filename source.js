@@ -6,7 +6,7 @@ var awesome = function(domId) {
 };
 
 try {
-  awesome.domId = $('a[style*=left\\:\\ 370px]')[0].id;
+  awesome.domId = $('.invite_dj').next()[0].id;
 } catch(e) {
   console.log("Could not automatically detect awesome button's DOM ID. Caught error: " + e);
 }
